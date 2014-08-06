@@ -8,7 +8,7 @@ for dir in logs pid tmp env versions; do
 	mkdir -p $dir
 done
 
-version=${ZOOKEEPER_VERSION:-3.4.5}
+version=${ZOOKEEPER_VERSION:-3.4.6}
 echo $version > env/ZOOKEEPER_VERSION
 if ! [ -d versions/$version ]; then
   url=http://www.poolsaboveground.com/apache/zookeeper/zookeeper-$version/zookeeper-$version.tar.gz
